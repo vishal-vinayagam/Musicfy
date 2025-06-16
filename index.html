@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1db954">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Musicfy</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-search"></i> Search</li>
+                <li><i class="fas fa-book"></i> Your Library</li>
+            </ul>
+            <div class="playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li>Create Playlist</li>
+                    <li>Liked Songs</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="navigation-buttons">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="user-profile">
+                    <img src="assets/images/profile.jpg" alt="Profile">
+                </div>
+            </header>
+
+            <section class="banner">
+                <h1>Good afternoon</h1>
+                <div class="playlist-grid">
+                    <div class="playlist-card">Chill Hits</div>
+                    <div class="playlist-card">Top Hits</div>
+                    <div class="playlist-card">Mood Booster</div>
+                    <div class="playlist-card">Workout</div>
+                    <div class="playlist-card">Indie Mix</div>
+                    <div class="playlist-card">Rock Classics</div>
+                </div>
+            </section>
+
+            <section class="recently-played">
+                <h2>Recently played</h2>
+                <div class="song-list">
+                    <div class="song-card">
+                        <img src="assets/images/song1.jpg" alt="Song cover">
+                        <h3>Blinding Lights</h3>
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/images/song2.jpg" alt="Song cover">
+                        <h3>Save Your Tears</h3>
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/images/song3.jpg" alt="Song cover">
+                        <h3>Stay</h3>
+                        <p>The Kid LAROI, Justin Bieber</p>
+                    </div>
+                    <div class="song-card">
+                        <img src="assets/images/song4.jpg" alt="Song cover">
+                        <h3>Levitating</h3>
+                        <p>Dua Lipa</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Player Controls -->
+        <footer class="player-controls">
+            <div class="song-info">
+                <img src="assets/images/song1.jpg" alt="Now playing">
+                <div>
+                    <h4>Blinding Lights</h4>
+                    <p>The Weeknd</p>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="player-buttons">
+                <button><i class="fas fa-random"></i></button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-bar">
+                <span>1:42</span>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+                <span>3:20</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
